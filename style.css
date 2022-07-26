@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+body{
+    background-color: black;
+}
+
+#titulo{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#mensagens{
+    background-color: white;
+    font-size: 32px;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 40px 0;
+}
+
+#versus{
+    color: white;
+    width: 70px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#placar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+#jogador, #computador{
+    position: relative;
+    flex-grow: 1;
+    border-radius: 5px;
+    width: 200px;
+    padding: 20px;
+}
+
+#jogador{
+    background-color: #ff7675;
+    color: white;
+}
+
+#computador{
+    background-color: #74b9ff;
+    color: white;
+}
+
+#jogador-nome, #computador-nome{
+    margin: 0;
+    padding: 0;
+}
+
+#jogador-nome{
+    text-align: left;
+}
+
+#computador-nome{
+    text-align: right;
+}
+
+#jogador-pontos, #computador-pontos{
+    position: absolute;
+    top: 8px;
+    font-size: 32px;
+}
+
+#jogador-pontos{
+    right: 20px;
+}
+
+ul#jogador-escolha, ul#computador-escolha{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+ul#jogador-escolha li, ul#computador-escolha li{
+    display: inline;
+}
+
+ul#jogador-escolha li a, ul#computador-escolha li a{
+  opacity: .2;
+}
+
+ul#jogador-escolha li a:hover, ul #jogador-escolha li a.selecionado, ul#computador-escolha li a.selecionado{    opacity: 1;
+}
+
+ul#jogador-escolha li a img, ul#computador-escolha li a img{
+    max-width: 80px;  
+}
